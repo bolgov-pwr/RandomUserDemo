@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class RandomUserViewController: UIViewController {
 
@@ -19,8 +21,6 @@ final class RandomUserViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
-		view.backgroundColor = UIColor.white
+			
 	}
 }
-

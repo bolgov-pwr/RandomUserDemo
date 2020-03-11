@@ -13,6 +13,26 @@
 		8452BF422418E23C0044A5CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8452BF412418E23C0044A5CC /* Assets.xcassets */; };
 		8452BF452418E23C0044A5CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8452BF432418E23C0044A5CC /* LaunchScreen.storyboard */; };
 		8452BF4D2418E4560044A5CC /* RandomUserViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8452BF4C2418E4560044A5CC /* RandomUserViewController.storyboard */; };
+		8452BF692418F8DD0044A5CC /* RxBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF4F2418F8DC0044A5CC /* RxBindable.swift */; };
+		8452BF6A2418F8DD0044A5CC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF512418F8DC0044A5CC /* Extensions.swift */; };
+		8452BF6B2418F8DD0044A5CC /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF522418F8DC0044A5CC /* UIKitExtensions.swift */; };
+		8452BF6C2418F8DD0044A5CC /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF542418F8DC0044A5CC /* RealmManager.swift */; };
+		8452BF6D2418F8DD0044A5CC /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF582418F8DD0044A5CC /* APIResponse.swift */; };
+		8452BF6E2418F8DD0044A5CC /* RandomuserAPISource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF5A2418F8DD0044A5CC /* RandomuserAPISource.swift */; };
+		8452BF6F2418F8DD0044A5CC /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF5C2418F8DD0044A5CC /* AppError.swift */; };
+		8452BF702418F8DD0044A5CC /* AppError+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF5D2418F8DD0044A5CC /* AppError+Network.swift */; };
+		8452BF712418F8DD0044A5CC /* AppError+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF5E2418F8DD0044A5CC /* AppError+File.swift */; };
+		8452BF722418F8DD0044A5CC /* RandomuserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF602418F8DD0044A5CC /* RandomuserRequest.swift */; };
+		8452BF732418F8DD0044A5CC /* RandomUserNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF622418F8DD0044A5CC /* RandomUserNetworkService.swift */; };
+		8452BF742418F8DD0044A5CC /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF642418F8DD0044A5CC /* NetworkServiceProtocol.swift */; };
+		8452BF752418F8DD0044A5CC /* APIClientSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF652418F8DD0044A5CC /* APIClientSource.swift */; };
+		8452BF762418F8DD0044A5CC /* APIRx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF662418F8DD0044A5CC /* APIRx.swift */; };
+		8452BF772418F8DD0044A5CC /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF672418F8DD0044A5CC /* APIRequest.swift */; };
+		8452BF822418F91A0044A5CC /* AnimateLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF7D2418F91A0044A5CC /* AnimateLoadingView.swift */; };
+		8452BF842418F91A0044A5CC /* LoadingViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF7F2418F91A0044A5CC /* LoadingViewable.swift */; };
+		8452BF852418F91A0044A5CC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF802418F91A0044A5CC /* LoadingView.swift */; };
+		8452BF9A241903B40044A5CC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF99241903B40044A5CC /* Person.swift */; };
+		8452BF9C241903BD0044A5CC /* Persons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF9B241903BD0044A5CC /* Persons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +44,26 @@
 		8452BF442418E23C0044A5CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8452BF462418E23C0044A5CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8452BF4C2418E4560044A5CC /* RandomUserViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RandomUserViewController.storyboard; sourceTree = "<group>"; };
+		8452BF4F2418F8DC0044A5CC /* RxBindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxBindable.swift; sourceTree = "<group>"; };
+		8452BF512418F8DC0044A5CC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8452BF522418F8DC0044A5CC /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		8452BF542418F8DC0044A5CC /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		8452BF582418F8DD0044A5CC /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIResponse.swift; path = ../Response/APIResponse.swift; sourceTree = "<group>"; };
+		8452BF5A2418F8DD0044A5CC /* RandomuserAPISource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomuserAPISource.swift; sourceTree = "<group>"; };
+		8452BF5C2418F8DD0044A5CC /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		8452BF5D2418F8DD0044A5CC /* AppError+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppError+Network.swift"; sourceTree = "<group>"; };
+		8452BF5E2418F8DD0044A5CC /* AppError+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppError+File.swift"; sourceTree = "<group>"; };
+		8452BF602418F8DD0044A5CC /* RandomuserRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomuserRequest.swift; sourceTree = "<group>"; };
+		8452BF622418F8DD0044A5CC /* RandomUserNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUserNetworkService.swift; sourceTree = "<group>"; };
+		8452BF642418F8DD0044A5CC /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		8452BF652418F8DD0044A5CC /* APIClientSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientSource.swift; sourceTree = "<group>"; };
+		8452BF662418F8DD0044A5CC /* APIRx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRx.swift; sourceTree = "<group>"; };
+		8452BF672418F8DD0044A5CC /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		8452BF7D2418F91A0044A5CC /* AnimateLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimateLoadingView.swift; sourceTree = "<group>"; };
+		8452BF7F2418F91A0044A5CC /* LoadingViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewable.swift; sourceTree = "<group>"; };
+		8452BF802418F91A0044A5CC /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8452BF99241903B40044A5CC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8452BF9B241903BD0044A5CC /* Persons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persons.swift; sourceTree = "<group>"; };
 		E6F6F6DB10791B309D7F6C9F /* Pods-RandomUserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUserDemo.debug.xcconfig"; path = "Target Support Files/Pods-RandomUserDemo/Pods-RandomUserDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E9B0890C13A089329B0F2452 /* Pods_RandomUserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -46,7 +86,6 @@
 				E6F6F6DB10791B309D7F6C9F /* Pods-RandomUserDemo.debug.xcconfig */,
 				5C6C401D75A6A4BF4B35AC95 /* Pods-RandomUserDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -72,13 +111,169 @@
 			isa = PBXGroup;
 			children = (
 				8452BF382418E23B0044A5CC /* AppDelegate.swift */,
-				8452BF3C2418E23B0044A5CC /* RandomUserViewController.swift */,
-				8452BF4C2418E4560044A5CC /* RandomUserViewController.storyboard */,
-				8452BF412418E23C0044A5CC /* Assets.xcassets */,
-				8452BF432418E23C0044A5CC /* LaunchScreen.storyboard */,
+				8452BF862418FA150044A5CC /* Model */,
+				8452BF792418F91A0044A5CC /* Views */,
+				8452BF502418F8DC0044A5CC /* Extension */,
+				8452BF532418F8DC0044A5CC /* RealmManager */,
+				8452BF4E2418F8DC0044A5CC /* RX */,
+				8452BF552418F8DD0044A5CC /* Workers */,
+				8452BF8C2418FA8D0044A5CC /* RandomUserList */,
+				8452BF9E241904C80044A5CC /* Others */,
 				8452BF462418E23C0044A5CC /* Info.plist */,
 			);
 			path = RandomUserDemo;
+			sourceTree = "<group>";
+		};
+		8452BF4E2418F8DC0044A5CC /* RX */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF4F2418F8DC0044A5CC /* RxBindable.swift */,
+			);
+			path = RX;
+			sourceTree = "<group>";
+		};
+		8452BF502418F8DC0044A5CC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF512418F8DC0044A5CC /* Extensions.swift */,
+				8452BF522418F8DC0044A5CC /* UIKitExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8452BF532418F8DC0044A5CC /* RealmManager */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF542418F8DC0044A5CC /* RealmManager.swift */,
+			);
+			path = RealmManager;
+			sourceTree = "<group>";
+		};
+		8452BF552418F8DD0044A5CC /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF5B2418F8DD0044A5CC /* CustomError */,
+				8452BF562418F8DD0044A5CC /* API */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		8452BF562418F8DD0044A5CC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF632418F8DD0044A5CC /* Base */,
+				8452BF9D241904AA0044A5CC /* RandomUser */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8452BF592418F8DD0044A5CC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF5A2418F8DD0044A5CC /* RandomuserAPISource.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		8452BF5B2418F8DD0044A5CC /* CustomError */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF5C2418F8DD0044A5CC /* AppError.swift */,
+				8452BF5D2418F8DD0044A5CC /* AppError+Network.swift */,
+				8452BF5E2418F8DD0044A5CC /* AppError+File.swift */,
+			);
+			path = CustomError;
+			sourceTree = "<group>";
+		};
+		8452BF5F2418F8DD0044A5CC /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF602418F8DD0044A5CC /* RandomuserRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		8452BF612418F8DD0044A5CC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF622418F8DD0044A5CC /* RandomUserNetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		8452BF632418F8DD0044A5CC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF642418F8DD0044A5CC /* NetworkServiceProtocol.swift */,
+				8452BF652418F8DD0044A5CC /* APIClientSource.swift */,
+				8452BF662418F8DD0044A5CC /* APIRx.swift */,
+				8452BF672418F8DD0044A5CC /* APIRequest.swift */,
+				8452BF582418F8DD0044A5CC /* APIResponse.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8452BF792418F91A0044A5CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF7C2418F91A0044A5CC /* LoadingIndicator */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8452BF7C2418F91A0044A5CC /* LoadingIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF7D2418F91A0044A5CC /* AnimateLoadingView.swift */,
+				8452BF7F2418F91A0044A5CC /* LoadingViewable.swift */,
+				8452BF802418F91A0044A5CC /* LoadingView.swift */,
+			);
+			path = LoadingIndicator;
+			sourceTree = "<group>";
+		};
+		8452BF862418FA150044A5CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF98241903A80044A5CC /* Person */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8452BF8C2418FA8D0044A5CC /* RandomUserList */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF3C2418E23B0044A5CC /* RandomUserViewController.swift */,
+				8452BF4C2418E4560044A5CC /* RandomUserViewController.storyboard */,
+			);
+			path = RandomUserList;
+			sourceTree = "<group>";
+		};
+		8452BF98241903A80044A5CC /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF99241903B40044A5CC /* Person.swift */,
+				8452BF9B241903BD0044A5CC /* Persons.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		8452BF9D241904AA0044A5CC /* RandomUser */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF592418F8DD0044A5CC /* Source */,
+				8452BF5F2418F8DD0044A5CC /* Request */,
+				8452BF612418F8DD0044A5CC /* Service */,
+			);
+			path = RandomUser;
+			sourceTree = "<group>";
+		};
+		8452BF9E241904C80044A5CC /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				8452BF412418E23C0044A5CC /* Assets.xcassets */,
+				8452BF432418E23C0044A5CC /* LaunchScreen.storyboard */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 		B0EDEBB51FABB1C38B91C97F /* Frameworks */ = {
@@ -217,8 +412,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8452BF6D2418F8DD0044A5CC /* APIResponse.swift in Sources */,
+				8452BF712418F8DD0044A5CC /* AppError+File.swift in Sources */,
+				8452BF852418F91A0044A5CC /* LoadingView.swift in Sources */,
+				8452BF752418F8DD0044A5CC /* APIClientSource.swift in Sources */,
+				8452BF692418F8DD0044A5CC /* RxBindable.swift in Sources */,
+				8452BF722418F8DD0044A5CC /* RandomuserRequest.swift in Sources */,
+				8452BF9C241903BD0044A5CC /* Persons.swift in Sources */,
+				8452BF6F2418F8DD0044A5CC /* AppError.swift in Sources */,
 				8452BF3D2418E23B0044A5CC /* RandomUserViewController.swift in Sources */,
 				8452BF392418E23B0044A5CC /* AppDelegate.swift in Sources */,
+				8452BF6A2418F8DD0044A5CC /* Extensions.swift in Sources */,
+				8452BF842418F91A0044A5CC /* LoadingViewable.swift in Sources */,
+				8452BF6B2418F8DD0044A5CC /* UIKitExtensions.swift in Sources */,
+				8452BF762418F8DD0044A5CC /* APIRx.swift in Sources */,
+				8452BF732418F8DD0044A5CC /* RandomUserNetworkService.swift in Sources */,
+				8452BF742418F8DD0044A5CC /* NetworkServiceProtocol.swift in Sources */,
+				8452BF6C2418F8DD0044A5CC /* RealmManager.swift in Sources */,
+				8452BF772418F8DD0044A5CC /* APIRequest.swift in Sources */,
+				8452BF6E2418F8DD0044A5CC /* RandomuserAPISource.swift in Sources */,
+				8452BF9A241903B40044A5CC /* Person.swift in Sources */,
+				8452BF702418F8DD0044A5CC /* AppError+Network.swift in Sources */,
+				8452BF822418F91A0044A5CC /* AnimateLoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
