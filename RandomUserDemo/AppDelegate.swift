@@ -15,11 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		
-		let vc = RandomUserViewController.storyboardInstance() ?? UIViewController()
-		let navVC = UINavigationController(rootViewController: vc)
+		let randomUserScreen = RandomUserConfigurator(vc: RandomUserViewController.storyboardInstance()!,
+													  type: .navigation(title: "Random User List"))
+		let vc = randomUserScreen.configure(with: RandomUserNetworkService(source: RandomUserNetworkSource()))
 		
 		self.window = UIWindow(frame: UIScreen.main.bounds)
-		self.window?.rootViewController = navVC
+		self.window?.rootViewController = vc
 		self.window?.makeKeyAndVisible()
 		
 		return true

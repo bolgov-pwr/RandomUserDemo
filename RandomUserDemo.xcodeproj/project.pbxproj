@@ -16,7 +16,6 @@
 		8452BF692418F8DD0044A5CC /* RxBindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF4F2418F8DC0044A5CC /* RxBindable.swift */; };
 		8452BF6A2418F8DD0044A5CC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF512418F8DC0044A5CC /* Extensions.swift */; };
 		8452BF6B2418F8DD0044A5CC /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF522418F8DC0044A5CC /* UIKitExtensions.swift */; };
-		8452BF6C2418F8DD0044A5CC /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF542418F8DC0044A5CC /* RealmManager.swift */; };
 		8452BF6D2418F8DD0044A5CC /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF582418F8DD0044A5CC /* APIResponse.swift */; };
 		8452BF6E2418F8DD0044A5CC /* RandomuserAPISource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF5A2418F8DD0044A5CC /* RandomuserAPISource.swift */; };
 		8452BF6F2418F8DD0044A5CC /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF5C2418F8DD0044A5CC /* AppError.swift */; };
@@ -33,6 +32,17 @@
 		8452BF852418F91A0044A5CC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF802418F91A0044A5CC /* LoadingView.swift */; };
 		8452BF9A241903B40044A5CC /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF99241903B40044A5CC /* Person.swift */; };
 		8452BF9C241903BD0044A5CC /* Persons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF9B241903BD0044A5CC /* Persons.swift */; };
+		8452BFA024190AFA0044A5CC /* RandomUserVC+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BF9F24190AFA0044A5CC /* RandomUserVC+Actions.swift */; };
+		8452BFA224190B210044A5CC /* RandomUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BFA124190B210044A5CC /* RandomUserViewModel.swift */; };
+		8452BFA424190B410044A5CC /* RandomUserConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BFA324190B410044A5CC /* RandomUserConfigurator.swift */; };
+		8452BFA7241915D40044A5CC /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8452BFA6241915D40044A5CC /* PersonCell.swift */; };
+		8452BFA9241917620044A5CC /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8452BFA8241917620044A5CC /* PersonCell.xib */; };
+		848296C1241935F500D6C9F7 /* UserDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848296C0241935F500D6C9F7 /* UserDescriptionViewController.swift */; };
+		848296C32419361500D6C9F7 /* UserDescriptionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848296C22419361500D6C9F7 /* UserDescriptionViewController.storyboard */; };
+		848296C524193E6D00D6C9F7 /* UserDescriptionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848296C424193E6D00D6C9F7 /* UserDescriptionConfigurator.swift */; };
+		848296C724193E8E00D6C9F7 /* ViewControllerConfigureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848296C624193E8E00D6C9F7 /* ViewControllerConfigureType.swift */; };
+		848296C9241943CB00D6C9F7 /* RandomUserVC+NavigationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848296C8241943CB00D6C9F7 /* RandomUserVC+NavigationAnimation.swift */; };
+		848296CC2419440D00D6C9F7 /* NavigationControllerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848296CB2419440D00D6C9F7 /* NavigationControllerAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +57,6 @@
 		8452BF4F2418F8DC0044A5CC /* RxBindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxBindable.swift; sourceTree = "<group>"; };
 		8452BF512418F8DC0044A5CC /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8452BF522418F8DC0044A5CC /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
-		8452BF542418F8DC0044A5CC /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		8452BF582418F8DD0044A5CC /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIResponse.swift; path = ../Response/APIResponse.swift; sourceTree = "<group>"; };
 		8452BF5A2418F8DD0044A5CC /* RandomuserAPISource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomuserAPISource.swift; sourceTree = "<group>"; };
 		8452BF5C2418F8DD0044A5CC /* AppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
@@ -64,6 +73,17 @@
 		8452BF802418F91A0044A5CC /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		8452BF99241903B40044A5CC /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		8452BF9B241903BD0044A5CC /* Persons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persons.swift; sourceTree = "<group>"; };
+		8452BF9F24190AFA0044A5CC /* RandomUserVC+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomUserVC+Actions.swift"; sourceTree = "<group>"; };
+		8452BFA124190B210044A5CC /* RandomUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserViewModel.swift; sourceTree = "<group>"; };
+		8452BFA324190B410044A5CC /* RandomUserConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserConfigurator.swift; sourceTree = "<group>"; };
+		8452BFA6241915D40044A5CC /* PersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
+		8452BFA8241917620044A5CC /* PersonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
+		848296C0241935F500D6C9F7 /* UserDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDescriptionViewController.swift; sourceTree = "<group>"; };
+		848296C22419361500D6C9F7 /* UserDescriptionViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDescriptionViewController.storyboard; sourceTree = "<group>"; };
+		848296C424193E6D00D6C9F7 /* UserDescriptionConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDescriptionConfigurator.swift; sourceTree = "<group>"; };
+		848296C624193E8E00D6C9F7 /* ViewControllerConfigureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConfigureType.swift; sourceTree = "<group>"; };
+		848296C8241943CB00D6C9F7 /* RandomUserVC+NavigationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomUserVC+NavigationAnimation.swift"; sourceTree = "<group>"; };
+		848296CB2419440D00D6C9F7 /* NavigationControllerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerAnimation.swift; sourceTree = "<group>"; };
 		E6F6F6DB10791B309D7F6C9F /* Pods-RandomUserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUserDemo.debug.xcconfig"; path = "Target Support Files/Pods-RandomUserDemo/Pods-RandomUserDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E9B0890C13A089329B0F2452 /* Pods_RandomUserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -111,13 +131,14 @@
 			isa = PBXGroup;
 			children = (
 				8452BF382418E23B0044A5CC /* AppDelegate.swift */,
+				848296C624193E8E00D6C9F7 /* ViewControllerConfigureType.swift */,
 				8452BF862418FA150044A5CC /* Model */,
 				8452BF792418F91A0044A5CC /* Views */,
 				8452BF502418F8DC0044A5CC /* Extension */,
-				8452BF532418F8DC0044A5CC /* RealmManager */,
 				8452BF4E2418F8DC0044A5CC /* RX */,
 				8452BF552418F8DD0044A5CC /* Workers */,
 				8452BF8C2418FA8D0044A5CC /* RandomUserList */,
+				848296BF241935D900D6C9F7 /* UserDescription */,
 				8452BF9E241904C80044A5CC /* Others */,
 				8452BF462418E23C0044A5CC /* Info.plist */,
 			);
@@ -139,14 +160,6 @@
 				8452BF522418F8DC0044A5CC /* UIKitExtensions.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		8452BF532418F8DC0044A5CC /* RealmManager */ = {
-			isa = PBXGroup;
-			children = (
-				8452BF542418F8DC0044A5CC /* RealmManager.swift */,
-			);
-			path = RealmManager;
 			sourceTree = "<group>";
 		};
 		8452BF552418F8DD0044A5CC /* Workers */ = {
@@ -216,6 +229,7 @@
 		8452BF792418F91A0044A5CC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				848296CA2419440000D6C9F7 /* Animations */,
 				8452BF7C2418F91A0044A5CC /* LoadingIndicator */,
 			);
 			path = Views;
@@ -242,8 +256,13 @@
 		8452BF8C2418FA8D0044A5CC /* RandomUserList */ = {
 			isa = PBXGroup;
 			children = (
-				8452BF3C2418E23B0044A5CC /* RandomUserViewController.swift */,
+				8452BFA5241915CB0044A5CC /* Cells */,
 				8452BF4C2418E4560044A5CC /* RandomUserViewController.storyboard */,
+				8452BF3C2418E23B0044A5CC /* RandomUserViewController.swift */,
+				8452BF9F24190AFA0044A5CC /* RandomUserVC+Actions.swift */,
+				8452BFA124190B210044A5CC /* RandomUserViewModel.swift */,
+				8452BFA324190B410044A5CC /* RandomUserConfigurator.swift */,
+				848296C8241943CB00D6C9F7 /* RandomUserVC+NavigationAnimation.swift */,
 			);
 			path = RandomUserList;
 			sourceTree = "<group>";
@@ -274,6 +293,33 @@
 				8452BF432418E23C0044A5CC /* LaunchScreen.storyboard */,
 			);
 			path = Others;
+			sourceTree = "<group>";
+		};
+		8452BFA5241915CB0044A5CC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8452BFA8241917620044A5CC /* PersonCell.xib */,
+				8452BFA6241915D40044A5CC /* PersonCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		848296BF241935D900D6C9F7 /* UserDescription */ = {
+			isa = PBXGroup;
+			children = (
+				848296C22419361500D6C9F7 /* UserDescriptionViewController.storyboard */,
+				848296C0241935F500D6C9F7 /* UserDescriptionViewController.swift */,
+				848296C424193E6D00D6C9F7 /* UserDescriptionConfigurator.swift */,
+			);
+			path = UserDescription;
+			sourceTree = "<group>";
+		};
+		848296CA2419440000D6C9F7 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				848296CB2419440D00D6C9F7 /* NavigationControllerAnimation.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 		B0EDEBB51FABB1C38B91C97F /* Frameworks */ = {
@@ -346,7 +392,9 @@
 			files = (
 				8452BF452418E23C0044A5CC /* LaunchScreen.storyboard in Resources */,
 				8452BF422418E23C0044A5CC /* Assets.xcassets in Resources */,
+				8452BFA9241917620044A5CC /* PersonCell.xib in Resources */,
 				8452BF4D2418E4560044A5CC /* RandomUserViewController.storyboard in Resources */,
+				848296C32419361500D6C9F7 /* UserDescriptionViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,8 +410,6 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RandomUserDemo/Pods-RandomUserDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -372,8 +418,6 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -412,8 +456,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848296C1241935F500D6C9F7 /* UserDescriptionViewController.swift in Sources */,
 				8452BF6D2418F8DD0044A5CC /* APIResponse.swift in Sources */,
 				8452BF712418F8DD0044A5CC /* AppError+File.swift in Sources */,
+				8452BFA424190B410044A5CC /* RandomUserConfigurator.swift in Sources */,
 				8452BF852418F91A0044A5CC /* LoadingView.swift in Sources */,
 				8452BF752418F8DD0044A5CC /* APIClientSource.swift in Sources */,
 				8452BF692418F8DD0044A5CC /* RxBindable.swift in Sources */,
@@ -421,17 +467,23 @@
 				8452BF9C241903BD0044A5CC /* Persons.swift in Sources */,
 				8452BF6F2418F8DD0044A5CC /* AppError.swift in Sources */,
 				8452BF3D2418E23B0044A5CC /* RandomUserViewController.swift in Sources */,
+				8452BFA024190AFA0044A5CC /* RandomUserVC+Actions.swift in Sources */,
 				8452BF392418E23B0044A5CC /* AppDelegate.swift in Sources */,
 				8452BF6A2418F8DD0044A5CC /* Extensions.swift in Sources */,
 				8452BF842418F91A0044A5CC /* LoadingViewable.swift in Sources */,
+				8452BFA7241915D40044A5CC /* PersonCell.swift in Sources */,
+				848296C9241943CB00D6C9F7 /* RandomUserVC+NavigationAnimation.swift in Sources */,
 				8452BF6B2418F8DD0044A5CC /* UIKitExtensions.swift in Sources */,
+				848296C524193E6D00D6C9F7 /* UserDescriptionConfigurator.swift in Sources */,
 				8452BF762418F8DD0044A5CC /* APIRx.swift in Sources */,
 				8452BF732418F8DD0044A5CC /* RandomUserNetworkService.swift in Sources */,
+				8452BFA224190B210044A5CC /* RandomUserViewModel.swift in Sources */,
+				848296CC2419440D00D6C9F7 /* NavigationControllerAnimation.swift in Sources */,
 				8452BF742418F8DD0044A5CC /* NetworkServiceProtocol.swift in Sources */,
-				8452BF6C2418F8DD0044A5CC /* RealmManager.swift in Sources */,
 				8452BF772418F8DD0044A5CC /* APIRequest.swift in Sources */,
 				8452BF6E2418F8DD0044A5CC /* RandomuserAPISource.swift in Sources */,
 				8452BF9A241903B40044A5CC /* Person.swift in Sources */,
+				848296C724193E8E00D6C9F7 /* ViewControllerConfigureType.swift in Sources */,
 				8452BF702418F8DD0044A5CC /* AppError+Network.swift in Sources */,
 				8452BF822418F91A0044A5CC /* AnimateLoadingView.swift in Sources */,
 			);

@@ -30,74 +30,64 @@ extension UIView {
     }
 }
 
-extension UIColor {
-	
-	class func hex(_ hexStr: NSString, alpha: CGFloat) -> UIColor {
-//        let realHexStr = hexStr.replacingOccurrences(of: "#", with: "")
-//        let scanner = Scanner(string: realHexStr as String)
-        let color: UInt32 = 0
-//        if scanner.scanHexInt32(&color) {
-            let r = CGFloat((color & 0xFF0000) >> 16) / 255.0
-            let g = CGFloat((color & 0x00FF00) >> 8) / 255.0
-            let b = CGFloat(color & 0x0000FF) / 255.0
-            return UIColor(red: r, green: g, blue: b, alpha: alpha)
-//        } else {
-//            return UIColor.white
-//        }
+extension UIImage {
+
+    func decodedImage() -> UIImage {
+        guard let cgImage = cgImage else { return self }
+        let size = CGSize(width: cgImage.width, height: cgImage.height)
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        let context = CGContext(data: nil, width: Int(size.width), height: Int(size.height), bitsPerComponent: 8, bytesPerRow: cgImage.bytesPerRow, space: colorSpace, bitmapInfo: CGImageAlphaInfo.noneSkipFirst.rawValue)
+        context?.draw(cgImage, in: CGRect(origin: .zero, size: size))
+        guard let decodedImage = context?.makeImage() else { return self }
+        return UIImage(cgImage: decodedImage)
     }
 	
-	enum DirectionGradient {
-		case rightBottomToLeftTop
-		case leftBottomToRightTop
-		case rightTopToLeftBottom
-		case leftATopToRightBottom
-		case fromBottomToTop
-	}
 	
-	static func gradientWithDirection(frame: CGRect, colors: [UIColor] = [UIColor.hex("2145FF", alpha: 0.8),
-																   UIColor.hex("1F4FFC", alpha: 0.8),
-																   UIColor.hex("0E9BE9", alpha: 0.8),
-																   UIColor.hex("05C5DF", alpha: 0.8),
-																   UIColor.hex("00DADA", alpha: 0.8)],
-							   direction: DirectionGradient) -> UIColor {
-		
-		let backgroundGradientLayer = CAGradientLayer()
-		backgroundGradientLayer.frame = frame
-		
-		switch direction {
-		case .rightBottomToLeftTop:
-			backgroundGradientLayer.startPoint = CGPoint(x: 1, y: 1)
-			backgroundGradientLayer.endPoint = CGPoint(x: 0, y: 0)
-		case .leftBottomToRightTop:
-			backgroundGradientLayer.startPoint = CGPoint(x: 0, y: 1)
-			backgroundGradientLayer.endPoint = CGPoint(x: 1, y: 0)
-		case .rightTopToLeftBottom:
-			backgroundGradientLayer.startPoint = CGPoint(x: 1, y: 0)
-			backgroundGradientLayer.endPoint = CGPoint(x: 0, y: 1)
-		case .leftATopToRightBottom:
-			backgroundGradientLayer.startPoint = CGPoint(x: 0, y: 0)
-			backgroundGradientLayer.endPoint = CGPoint(x: 1, y: 1)
-		case .fromBottomToTop:
-			backgroundGradientLayer.startPoint = CGPoint(x: 0.5, y: 1)
-			backgroundGradientLayer.endPoint = CGPoint(x: 0.5, y: 0)
-		}
-		
-		let cgColors = colors.map({$0.cgColor})
-		
-		backgroundGradientLayer.colors = cgColors
-		
-		UIGraphicsBeginImageContext(backgroundGradientLayer.bounds.size)
-		
-		if let context = UIGraphicsGetCurrentContext() {
-			backgroundGradientLayer.render(in: context)
-		}
-		
-		let backgroundColorImage = UIGraphicsGetImageFromCurrentImageContext()
-		
-		
-		UIGraphicsEndImageContext()
-		
-		return UIColor(patternImage: backgroundColorImage ?? UIImage())
-	}
+}
 
+
+enum CornerRadiusOption {
+	case cicle
+	case custom(value: CGFloat)
+}
+
+extension UIImageView {
+	
+	func resizedImage(image: UIImage, cornerRadius: CornerRadiusOption) {
+		
+		let size = image.size
+		let targetRect = bounds
+		let targetSize = bounds.size
+		
+		DispatchQueue.global(qos: .userInitiated).async {
+			let widthRatio  = targetSize.width  / size.width
+			let heightRatio = targetSize.height / size.height
+
+			var newSize: CGSize
+			if(widthRatio > heightRatio) {
+				newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
+			} else {
+				newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
+			}
+
+			let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
+
+			UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+			
+			switch cornerRadius {
+			case .cicle:
+				UIBezierPath(roundedRect: targetRect, cornerRadius: targetSize.width / 2).addClip()
+			case .custom(let value):
+				UIBezierPath(roundedRect: targetRect, cornerRadius: value).addClip()
+			}
+			
+			image.draw(in: rect)
+			let newImage = UIGraphicsGetImageFromCurrentImageContext()
+			UIGraphicsEndImageContext()
+			
+			DispatchQueue.main.async { [weak self] in
+				self?.image = newImage
+			}
+		}
+	}
 }

@@ -7,14 +7,13 @@
 //
 
 import Foundation
-import RealmSwift
 
-final class Person: Object {
-	
-	@objc dynamic var first: String = ""
-	@objc dynamic var last: String = ""
-	@objc dynamic var pic: String = ""
-	@objc dynamic var cell: String = ""
+final class Person {
+
+	var first: String = ""
+	var last: String = ""
+	var pic: String = ""
+	var cell: String = ""
 	
 	required convenience init(from decoder: Decoder) throws {
 		self.init()
@@ -28,10 +27,6 @@ final class Person: Object {
 		
 		let picContainer = try container.nestedContainer(keyedBy: PictureCodingKeys.self, forKey: .picture)
 		pic = try picContainer.decodeIfPresent(String.self, forKey: .large) ?? ""
-	}
-	
-	override static func primaryKey() -> String? {
-		return "cell"
 	}
 }
 

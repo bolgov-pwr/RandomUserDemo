@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gFD-aL-qxX" customClass="PersonCell" customModule="RandomUserDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Mza-II-rkw">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7dz-r4-hJ8">
+                        <rect key="frame" x="6" y="4" width="108" height="108"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="7dz-r4-hJ8" secondAttribute="height" multiplier="1:1" id="Yvm-gP-4RC"/>
+                        </constraints>
+                    </imageView>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKd-yg-wH4">
+                        <rect key="frame" x="8" y="112" width="104" height="17"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7K6-gt-NpY">
+                        <rect key="frame" x="8" y="133" width="104" height="17"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="bKd-yg-wH4" firstAttribute="leading" secondItem="Mza-II-rkw" secondAttribute="leading" constant="8" id="Dcw-37-ukI"/>
+                    <constraint firstItem="bKd-yg-wH4" firstAttribute="top" secondItem="7dz-r4-hJ8" secondAttribute="bottom" id="L5t-c8-x2S"/>
+                    <constraint firstAttribute="trailing" secondItem="7K6-gt-NpY" secondAttribute="trailing" constant="8" id="Rmx-Ob-3zY"/>
+                    <constraint firstAttribute="trailing" secondItem="bKd-yg-wH4" secondAttribute="trailing" constant="8" id="Tbd-ch-1In"/>
+                    <constraint firstItem="7dz-r4-hJ8" firstAttribute="centerX" secondItem="Mza-II-rkw" secondAttribute="centerX" id="bO1-9Z-ML5"/>
+                    <constraint firstItem="7dz-r4-hJ8" firstAttribute="top" secondItem="Mza-II-rkw" secondAttribute="top" constant="4" id="f9M-DD-28W"/>
+                    <constraint firstItem="7dz-r4-hJ8" firstAttribute="width" secondItem="Mza-II-rkw" secondAttribute="width" multiplier="0.9" id="fKp-Up-iHg"/>
+                    <constraint firstItem="7K6-gt-NpY" firstAttribute="leading" secondItem="Mza-II-rkw" secondAttribute="leading" constant="8" id="hd9-j7-6QA"/>
+                    <constraint firstItem="7K6-gt-NpY" firstAttribute="top" secondItem="bKd-yg-wH4" secondAttribute="bottom" constant="4" id="nHo-qo-0eO"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="avatarImageView" destination="7dz-r4-hJ8" id="d77-xC-gL5"/>
+                <outlet property="cellNumberLabel" destination="7K6-gt-NpY" id="HHN-tB-cvB"/>
+                <outlet property="nameLabel" destination="bKd-yg-wH4" id="cYD-Rx-fEQ"/>
+            </connections>
+            <point key="canvasLocation" x="128" y="152"/>
+        </collectionViewCell>
+    </objects>
+</document>
