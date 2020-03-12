@@ -26,11 +26,15 @@ final class RandomUserViewModel: RxBindable {
 	
 	func requestData(isReload: Bool = false) {
 		
-		self.loading.onNext(true)
+		if isReload {
+			self.loading.onNext(true)
+		}
 		
 		networkService.getUsers(with: 20)
 			.subscribe(onNext: { [weak self] personRespond in
-				self?.loading.onNext(false)
+				if isReload {
+					self?.loading.onNext(false)
+				}
 				if let users = personRespond.persons, !users.isEmpty {
 					if !isReload {
 						var prevValues = [Person]()
@@ -42,15 +46,14 @@ final class RandomUserViewModel: RxBindable {
 						self?.users.onNext(users)
 
 					}
-				} else {
-					self?.loading.onNext(false)
 				}
 			}, onError: { [weak self] err in
 				if let error = err as? AppError {
 					self?.error.onNext(error)
 				}
-				self?.loading.onNext(false)
-//				self?.error.onNext(err)
+				if isReload {
+					self?.loading.onNext(false)
+				}
 			})
 			.disposed(by: disposeBag)
 	}

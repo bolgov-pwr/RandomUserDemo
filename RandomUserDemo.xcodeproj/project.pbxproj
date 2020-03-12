@@ -43,6 +43,7 @@
 		848296C724193E8E00D6C9F7 /* ViewControllerConfigureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848296C624193E8E00D6C9F7 /* ViewControllerConfigureType.swift */; };
 		848296C9241943CB00D6C9F7 /* RandomUserVC+NavigationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848296C8241943CB00D6C9F7 /* RandomUserVC+NavigationAnimation.swift */; };
 		848296CC2419440D00D6C9F7 /* NavigationControllerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848296CB2419440D00D6C9F7 /* NavigationControllerAnimation.swift */; };
+		848296CF241A345B00D6C9F7 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848296CE241A345B00D6C9F7 /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		848296C624193E8E00D6C9F7 /* ViewControllerConfigureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConfigureType.swift; sourceTree = "<group>"; };
 		848296C8241943CB00D6C9F7 /* RandomUserVC+NavigationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RandomUserVC+NavigationAnimation.swift"; sourceTree = "<group>"; };
 		848296CB2419440D00D6C9F7 /* NavigationControllerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerAnimation.swift; sourceTree = "<group>"; };
+		848296CE241A345B00D6C9F7 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		E6F6F6DB10791B309D7F6C9F /* Pods-RandomUserDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomUserDemo.debug.xcconfig"; path = "Target Support Files/Pods-RandomUserDemo/Pods-RandomUserDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E9B0890C13A089329B0F2452 /* Pods_RandomUserDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomUserDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -165,6 +167,7 @@
 		8452BF552418F8DD0044A5CC /* Workers */ = {
 			isa = PBXGroup;
 			children = (
+				848296CD241A344E00D6C9F7 /* DateFormatter */,
 				8452BF5B2418F8DD0044A5CC /* CustomError */,
 				8452BF562418F8DD0044A5CC /* API */,
 			);
@@ -322,6 +325,14 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		848296CD241A344E00D6C9F7 /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				848296CE241A345B00D6C9F7 /* DateFormatter.swift */,
+			);
+			path = DateFormatter;
+			sourceTree = "<group>";
+		};
 		B0EDEBB51FABB1C38B91C97F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -477,6 +488,7 @@
 				848296C524193E6D00D6C9F7 /* UserDescriptionConfigurator.swift in Sources */,
 				8452BF762418F8DD0044A5CC /* APIRx.swift in Sources */,
 				8452BF732418F8DD0044A5CC /* RandomUserNetworkService.swift in Sources */,
+				848296CF241A345B00D6C9F7 /* DateFormatter.swift in Sources */,
 				8452BFA224190B210044A5CC /* RandomUserViewModel.swift in Sources */,
 				848296CC2419440D00D6C9F7 /* NavigationControllerAnimation.swift in Sources */,
 				8452BF742418F8DD0044A5CC /* NetworkServiceProtocol.swift in Sources */,

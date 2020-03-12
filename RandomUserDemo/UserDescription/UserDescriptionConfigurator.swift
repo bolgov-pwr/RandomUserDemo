@@ -18,8 +18,8 @@ final class UserDescriptionConfigurator {
 		self.type = type
 	}
 	
-	func configure() -> UIViewController {
-
+	func configure(with person: Person) -> UIViewController {
+		vc.person.onNext(person)
 		switch type {
 		case .presentation:
 			return vc

@@ -14,12 +14,15 @@ final class Person {
 	var last: String = ""
 	var pic: String = ""
 	var cell: String = ""
+	var gender: String = ""
+	var birthday: String = ""
 	
 	required convenience init(from decoder: Decoder) throws {
 		self.init()
 		
 		let container = try decoder.container(keyedBy: CodingKeys.self)
 		cell = try container.decodeIfPresent(String.self, forKey: .cell) ?? ""
+		gender = try container.decodeIfPresent(String.self, forKey: .gender) ?? ""
 		
 		let nestedContainer = try container.nestedContainer(keyedBy: RatingsCodingKeys.self, forKey: .name)
 		first = try nestedContainer.decodeIfPresent(String.self, forKey: .first) ?? ""
@@ -27,6 +30,9 @@ final class Person {
 		
 		let picContainer = try container.nestedContainer(keyedBy: PictureCodingKeys.self, forKey: .picture)
 		pic = try picContainer.decodeIfPresent(String.self, forKey: .large) ?? ""
+		
+		let dobContainer = try container.nestedContainer(keyedBy: DateOfBirth.self, forKey: .dob)
+		birthday = try dobContainer.decodeIfPresent(String.self, forKey: .date) ?? ""
 	}
 }
 
@@ -36,6 +42,8 @@ extension Person: Codable {
 		case name
 		case picture
 		case cell
+		case gender
+		case dob
 	}
 	enum RatingsCodingKeys: String, CodingKey {
 		case first
@@ -43,6 +51,10 @@ extension Person: Codable {
 	}
 	enum PictureCodingKeys: String, CodingKey {
 		case large
+	}
+	
+	enum DateOfBirth: String, CodingKey {
+		case date
 	}
 	
 	public func encode(to encoder: Encoder) throws {

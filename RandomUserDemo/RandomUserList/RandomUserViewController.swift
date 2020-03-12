@@ -28,11 +28,11 @@ final class RandomUserViewController: UIViewController, RxBindable {
 		
 		setupCollection()
 		setupBindings()
-//		navigationController?.addCustomTransitioning()
 		randomUserVM?.requestData()
 	}
 	
 	private func setupCollection() {
+		navigationController?.view.layer.add(NavigationControllerAnimation.push, forKey: kCATransition)
 		collectionView.register(PersonCell.nib(), forCellWithReuseIdentifier: String(describing: PersonCell.self))
 		let control = UIRefreshControl()
 		control.addTarget(self, action: #selector(refreshCollection(_:)), for: .valueChanged)
@@ -50,7 +50,7 @@ final class RandomUserViewController: UIViewController, RxBindable {
 			.error
 			.observeOn(MainScheduler.instance)
 			.subscribe(onNext: { (error) in
-//				MessageView.sharedInstance.showOnView(message: error.localizedDescription, theme: .warning)
+				print(error)
 			})
 			.disposed(by: disposeBag)
 		
@@ -64,11 +64,9 @@ final class RandomUserViewController: UIViewController, RxBindable {
 		Observable
 			.zip(collectionView.rx.itemSelected, collectionView.rx.modelSelected(Person.self))
 			.bind { [weak self] indexPath, model in
-				guard let cell = self?.collectionView.cellForItem(at: indexPath) as? PersonCell else { return }
 
-				self?.navigationController?.view.layer.add(NavigationControllerAnimation.push, forKey: kCATransition)
-				
-				let vc = UserDescriptionViewController.storyboardInstance()!
+				let configurator = UserDescriptionConfigurator(vc: UserDescriptionViewController.storyboardInstance()!, type: .presentation)
+				let vc = configurator.configure(with: model)
 				self?.navigationController?.pushViewController(vc, animated: true)
 			}
 			.disposed(by: disposeBag)

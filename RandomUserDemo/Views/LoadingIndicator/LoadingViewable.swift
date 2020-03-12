@@ -16,7 +16,7 @@ protocol LoadingViewable {
 extension LoadingViewable where Self : UIViewController {
 	
     func startAnimating() {
-        let animateLoading = LoadingView(frame: CGRect(x: 0, y: 0, width: 120, height: 120))
+        let animateLoading = LoadingView(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
         view.addSubview(animateLoading)
 		view.bringSubviewToFront(animateLoading)
         animateLoading.restorationIdentifier = "loadingView"
